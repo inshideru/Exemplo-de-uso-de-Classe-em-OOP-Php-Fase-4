@@ -1,4 +1,7 @@
-<h2 class="sub-header">Clientes</h2>
+<div class="page-header">
+    <h2 class="sub-header">Clientes</h2><p class="lead">Esta é a lista de clientes.</p>
+</div>
+
 <div class="table-responsive">
     <table class="table table-striped table-responsive table-hover">
         <thead>
@@ -17,12 +20,12 @@
 
         foreach($clientes_lista as $cliente) {
             echo '<tr>';
-            echo '<td>' . $cliente->nome . ' </td>';
-            echo '<td>' . $cliente->cpf . ' </td>';
-            echo '<td>' . $cliente->rg . ' </td>';
-            echo '<td>' . $cliente->tel_fixo . ' </td>';
-            echo '<td>' . $cliente->celular . ' </td>';
-            echo '<td>' . $cliente->endereco . ' </td>';
+            echo '<td>' . $cliente->nome . '</td>';
+            echo '<td>' . $cliente->cpf . '</td>';
+            echo '<td>' . $cliente->rg . '</td>';
+            echo '<td>' . $cliente->tel_fixo . '</td>';
+            echo '<td>' . $cliente->celular . '</td>';
+            echo '<td>' . $cliente->endereco . '</td>';
             echo '</tr>';
         }
         ?>

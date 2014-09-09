@@ -1,3 +1,7 @@
+<?php
+require 'app/init.php';
+$conteudo = $route();
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -57,19 +61,16 @@
 
 <!-- Begin page content -->
 <div class="container">
-    <div class="page-header">
-        <h1>Bem-vindo!</h1>
-    </div>
-    <p class="lead">Esta é a lista de clientes.</p>
-
     <?php
-    require_once 'includes/clientes.php';
+    require_once 'includes/' . $conteudo . '.php';
     ?>
 </div>
 
+
 <div class="footer">
     <div class="container">
-        <p class="text-muted">Bem-vindo à <a href="/">lista de clientes</a> - Todos os direitos reservados - <?php echo date('Y'); ?></p>
+        <p class="text-muted">Bem-vindo à <a href="/">lista de clientes</a> - Todos os direitos reservados
+            - <?php echo date('Y'); ?></p>
     </div>
 </div>
 

@@ -1,6 +1,6 @@
 <?php
 
-require_once 'classes/cliente.php';
+require_once 'app/classes/cliente.php';
 
 $clientes_lista = array(
     new \classes\cliente('Fernando','123.231.231-22','244557-yy','3213-9899','93564-4774','Rua das Flores, 453'),
