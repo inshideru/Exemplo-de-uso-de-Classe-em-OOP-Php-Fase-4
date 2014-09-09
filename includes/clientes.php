@@ -1,7 +1,6 @@
 <div class="row">
     <div class="col-md-8">
         <h2 class="sub-header">Clientes</h2>
-        <p class="lead">Esta é a lista de clientes.</p>
     </div>
 
     <div class="col-md-4">
@@ -12,6 +11,7 @@
             Decrescente</a>
     </div>
 </div>
+<hr>
 <div class="row">
     <div class="table-responsive">
         <table class="table table-striped table-responsive table-hover">
