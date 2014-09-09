@@ -1,4 +1,4 @@
-# Orientação a Objeto em PHP
+# Orientação a Objetos em PHP
 
 * Estudo de Orientação a Objetos com Php - Exemplo bem simples com a criação de uma classe Cliente.
 * Foram adicionados 10 Objetos da classe Cliente a um array.
