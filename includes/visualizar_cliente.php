@@ -16,7 +16,7 @@ if ($posicao >= $quant_clientes || $posicao < 0) {
 ?>
 <div class="page-header">
     <h2 class="sub-header">Cliente <?php echo $cliente->nome; ?></h2>
-    <a href="\"><span class="glyphicon glyphicon-circle-arrow-left"></span> Voltar</a>
+    <a href="/"><span class="glyphicon glyphicon-circle-arrow-left"></span> Voltar</a>
 </div>
 
 <div class="table-responsive">
