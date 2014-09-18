@@ -17,7 +17,7 @@ class PessoaFisica extends Cliente implements GrauDeImportancia, EnderecoAlterna
     private $importancia;
     private $endereco_alternativo;
 
-    public function __construct($nome, $tel_fixo, $endereco, $cpf, $rg, $celular)
+    public function __construct($nome, $cpf, $rg, $tel_fixo, $celular, $endereco)
     {
         parent::__construct($nome, $tel_fixo, $endereco);
         $this->celular = $celular;

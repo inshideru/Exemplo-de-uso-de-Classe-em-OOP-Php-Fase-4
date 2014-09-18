@@ -19,11 +19,9 @@
             <tr>
                 <th>#</th>
                 <th>Nome</th>
-                <th>CPF</th>
-                <th>RG</th>
                 <th>Tel Fixo</th>
-                <th>Celular</th>
                 <th>Endereço</th>
+                <th>Tipo</th>
             </tr>
             </thead>
             <tbody>
@@ -33,12 +31,13 @@
             foreach ($clientes_lista as $indice => $cliente) {
                 echo '<tr>';
                 echo '<td>' . $indice . '</td>';
-                echo '<td><a href="visualizar_cliente?posicao=' . $indice . '">' . $cliente->nome . '</a></td>';
-                echo '<td>' . $cliente->cpf . '</td>';
-                echo '<td>' . $cliente->rg . '</td>';
-                echo '<td>' . $cliente->tel_fixo . '</td>';
-                echo '<td>' . $cliente->celular . '</td>';
-                echo '<td>' . $cliente->endereco . '</td>';
+                if ($cliente)
+                echo '<td><a href="visualizar_cliente?posicao=' . $indice . '">' . $cliente->getNome() . '</a></td>';
+                echo '<td>' . $cliente->getTelFixo() . '</td>';
+                echo '<td>' . $cliente->getEndereco() . '</td>';
+                echo '<td>';
+                echo $cliente instanceof \classes\PessoaFisica ? 'Pessoa Física' : 'Pessoa Jurídica';
+                echo '</td>';
                 echo '</tr>';
             }
             ?>
