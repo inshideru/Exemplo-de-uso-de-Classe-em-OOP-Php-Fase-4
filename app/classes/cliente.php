@@ -9,21 +9,66 @@
 namespace classes;
 
 
-class cliente {
+class cliente
+{
     public $nome;
-    public $cpf;
-    public $rg;
     public $tel_fixo;
-    public $celular;
     public $endereco;
 
-    public function __construct($nome, $cpf, $rg, $tel_fixo, $celular, $endereco)
+    public function __construct($nome, $tel_fixo, $endereco)
     {
         $this->nome = $nome;
-        $this->cpf = $cpf;
-        $this->rg = $rg;
         $this->tel_fixo = $tel_fixo;
-        $this->celular = $celular;
         $this->endereco = $endereco;
     }
+
+    /**
+     * @param mixed $endereco
+     */
+    public function setEndereco($endereco)
+    {
+        $this->endereco = $endereco;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getEndereco()
+    {
+        return $this->endereco;
+    }
+
+    /**
+     * @param mixed $nome
+     */
+    public function setNome($nome)
+    {
+        $this->nome = $nome;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getNome()
+    {
+        return $this->nome;
+    }
+
+    /**
+     * @param mixed $tel_fixo
+     */
+    public function setTelFixo($tel_fixo)
+    {
+        $this->tel_fixo = $tel_fixo;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getTelFixo()
+    {
+        return $this->tel_fixo;
+    }
+
+
 }
