@@ -29,6 +29,16 @@ $clientes_lista = array(
     new \classes\PessoaJuridica('Casa de Rações da Gatona', '33.231.321/00002-31', '12335000', '2345-7456', '3156-4453', 'Beco do Crime, 32'),
 );
 
+/** Gerando números aleatórios para teste */
+foreach ($clientes_lista as $cliente) {
+    $cliente->setGrauDeImportancia(rand(1,5));
+}
+
+$clientes_lista[0]->setEnderecoAlternativo('Rua das Amebas, 234');
+$clientes_lista[2]->setEnderecoAlternativo('Avenida Saturnino de Brito, 12312');
+$clientes_lista[7]->setEnderecoAlternativo('Rua Sofia Vergara, 8008');
+$clientes_lista[18]->setEnderecoAlternativo('Alameda dos Flamboyants, 21');
+
 if (isset($_GET['sort'])) {
 
     if ($_GET['sort'] == 'asc') {

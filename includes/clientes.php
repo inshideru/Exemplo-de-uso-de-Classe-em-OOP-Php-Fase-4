@@ -22,6 +22,7 @@
                 <th>Tel Fixo</th>
                 <th>Endereço</th>
                 <th>Tipo</th>
+                <th>Estrelas</th>
             </tr>
             </thead>
             <tbody>
@@ -38,6 +39,7 @@
                 echo '<td>';
                 echo $cliente instanceof \classes\PessoaFisica ? 'Pessoa Física' : 'Pessoa Jurídica';
                 echo '</td>';
+                echo '<td>' . $cliente->getGrauDeImportancia() . '</td>';
                 echo '</tr>';
             }
             ?>
