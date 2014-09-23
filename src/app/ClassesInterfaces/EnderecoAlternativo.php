@@ -6,8 +6,7 @@
  * Time: 12:52
  */
 
-namespace classes;
-
+namespace app\ClassesInterfaces;
 
 interface EnderecoAlternativo {
     function setEnderecoAlternativo($endereco);

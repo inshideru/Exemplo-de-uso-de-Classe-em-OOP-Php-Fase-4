@@ -6,10 +6,10 @@
  * Time: 10:05
  */
 
-namespace classes;
+namespace app\Classes;
 
 
-class cliente
+abstract class Cliente
 {
     public $nome;
     public $tel_fixo;

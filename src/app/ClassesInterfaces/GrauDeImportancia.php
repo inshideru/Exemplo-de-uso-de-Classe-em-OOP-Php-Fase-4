@@ -6,7 +6,7 @@
  * Time: 12:48
  */
 
-namespace classes;
+namespace app\ClassesInterfaces;
 
 
 interface GrauDeImportancia

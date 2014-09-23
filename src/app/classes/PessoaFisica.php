@@ -6,7 +6,10 @@
  * Time: 12:33
  */
 
-namespace classes;
+namespace app\Classes;
+use app\ClassesInterfaces\GrauDeImportancia;
+use app\ClassesInterfaces\EnderecoAlternativo;
+
 
 
 class PessoaFisica extends Cliente implements GrauDeImportancia, EnderecoAlternativo

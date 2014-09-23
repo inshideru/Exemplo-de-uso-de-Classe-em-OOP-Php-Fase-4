@@ -1,5 +1,5 @@
 <?php
-require 'app/init.php';
+require '../init.php';
 $conteudo = $route();
 ?>
 <!DOCTYPE html>
