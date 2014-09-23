@@ -1,4 +1,4 @@
-# Orientação a Objetos em PHP - Fase 2
+# Orientação a Objetos em PHP - Fase 3
 
 * Estudo de Orientação a Objetos com Php - Exemplo bem simples com a criação de uma classe Cliente.
 * Foram adicionados 20 Objetos das classes Pessoa Físisca e Pessoa Jurídica a um array.
