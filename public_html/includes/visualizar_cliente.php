@@ -71,16 +71,21 @@ if ($posicao >= $quant_clientes || $posicao < 0) {
             echo '<td>Estrelas</td>';
             echo '<td>' . $cliente->getGrauDeImportancia() . '</td>';
             echo '</tr>';
+
+            
             echo '<tr>';
             echo '<td>Endereço</td>';
             echo '<td>' . $cliente->getEndereco() . '</td>';
             echo '</tr>';
+          
+            if ($cliente->getEnderecoAlternativo()) {
             echo '<tr>';
             echo '<td>Endereço de cobrança</td>';
             echo '<td>' . $cliente->getEnderecoAlternativo() . '</td>';
             echo '</tr>';
             echo '<tr>';
             echo '</tr>';
+              }
 
             ?>
             </tbody>

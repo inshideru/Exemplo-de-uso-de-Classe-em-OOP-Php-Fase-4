@@ -11,7 +11,6 @@ use app\ClassesInterfaces\GrauDeImportancia;
 use app\ClassesInterfaces\EnderecoAlternativo;
 
 
-
 class PessoaFisica extends Cliente implements GrauDeImportancia, EnderecoAlternativo
 {
     private $celular;

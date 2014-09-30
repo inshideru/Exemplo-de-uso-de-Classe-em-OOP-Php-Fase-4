@@ -7,6 +7,9 @@
 ### Class Autoloader
 * Foi utilizado o padrão PSR-0 para o autoloader
 
+### Testes
+* Executar php -S localhost:8000 -t public_html na raiz do projeto para iniciar o servidor buit-in do php já com redirecionamento para a pasta pública
+
 ### Recursos utilizados
 * Bootswatch Flatly Theme para boostrap - http://bootswatch.com/flatly/
 * Roteamento com verificação de arquivos e validação

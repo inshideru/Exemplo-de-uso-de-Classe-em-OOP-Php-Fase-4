@@ -2,9 +2,8 @@ Options -Multiviews
 RewriteEngine On
 Option -Indexes
 
-
 RewriteCond %{REQUEST_FILENAME} -d
 RewriteCond %{REQUEST_FILENAME} -l
 RewriteCond %{REQUEST_FILENAME} -f
 
-RewriteRule ^(.+)$ /public_html/index.php [NC,L]
+RewriteRule ^(.*)$ /public_html/index.php [NC,L]

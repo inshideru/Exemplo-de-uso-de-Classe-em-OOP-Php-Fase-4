@@ -17,6 +17,7 @@ class PessoaJuridica extends Cliente implements GrauDeImportancia, EnderecoAlter
     private $insc_estadual;
     private $fax;
     private $importancia;
+    private $endereco_alternativo;
 
     public function __construct($nome, $cnpj, $insc_estadual, $tel_fixo, $fax, $endereco)
     {
