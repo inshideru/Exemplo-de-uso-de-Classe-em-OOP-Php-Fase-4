@@ -14,7 +14,7 @@
 <hr>
 <div class="row">
     <div class="table-responsive">
-        <table class="table table-striped table-responsive table-hover">
+        <table id="clientlist" class="table table-striped table-responsive table-hover">
             <thead>
             <tr>
                 <th>#</th>
@@ -37,7 +37,7 @@
                 echo '<td>' . $cliente->getTelFixo() . '</td>';
                 echo '<td>' . $cliente->getEndereco() . '</td>';
                 echo '<td>';
-                echo $cliente instanceof \classes\PessoaFisica ? 'Pessoa Física' : 'Pessoa Jurídica';
+                echo $cliente instanceof \app\Classes\PessoaFisica ? 'Pessoa Física' : 'Pessoa Jurídica';
                 echo '</td>';
                 echo '<td>' . $cliente->getGrauDeImportancia() . '</td>';
                 echo '</tr>';

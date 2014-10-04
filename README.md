@@ -21,6 +21,7 @@ php src/fixture.php
 
 ### Recursos utilizados
 * Bootswatch Flatly Theme para boostrap - http://bootswatch.com/flatly/
+* Plugin [Data Tables](http://www.datatables.net/) (jQuery) para visualização da lista de clientes
 * Roteamento com verificação de arquivos e validação
 * Configuração do servidor para redirecionar todas as requests para index.php (.htacces)
 

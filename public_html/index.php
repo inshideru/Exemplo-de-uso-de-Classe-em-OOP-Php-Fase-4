@@ -13,6 +13,11 @@ $conteudo = $route();
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="js/datatables/css/jquery.dataTables.min.css" media="screen">
+    <link rel="stylesheet" href="js/datatables/css/dataTables.bootstrap.css" media="screen">
+    <link rel="stylesheet" href="js/datatables/css/dataTables.responsive.css" media="screen">
+
     <link href="css/custom.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -80,5 +85,10 @@ $conteudo = $route();
 <!-- Placed at the end of the document so the pages load faster -->
 <script src="js/jquery-1.10.2.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+
+<script src="js/datatables/js/jquery.dataTables.js"></script>
+<script src="js/datatables/js/dataTables.bootstrap.js"></script>
+<script src="js/datatables/js/dataTables.responsive.min.js"></script>
+<script src="js/custom.js"></script>
 </body>
 </html>
