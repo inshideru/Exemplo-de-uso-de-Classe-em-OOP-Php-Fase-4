@@ -19,20 +19,14 @@ class PessoaFisica extends Cliente implements GrauDeImportancia, EnderecoAlterna
     private $importancia;
     private $endereco_alternativo;
 
-    public function __construct($nome, $cpf, $rg, $tel_fixo, $celular, $endereco)
+    public function __construct()
     {
-        parent::__construct($nome, $tel_fixo, $endereco);
-        $this->celular = $celular;
-        $this->rg = $rg;
-        $this->cpf = $cpf;
     }
 
-    /**
-     * @param mixed $celular
-     */
     public function setCelular($celular)
     {
         $this->celular = $celular;
+        return $this;
     }
 
     /**
@@ -43,12 +37,10 @@ class PessoaFisica extends Cliente implements GrauDeImportancia, EnderecoAlterna
         return $this->celular;
     }
 
-    /**
-     * @param mixed $cpf
-     */
     public function setCpf($cpf)
     {
         $this->cpf = $cpf;
+        return $this;
     }
 
     /**
@@ -59,12 +51,10 @@ class PessoaFisica extends Cliente implements GrauDeImportancia, EnderecoAlterna
         return $this->cpf;
     }
 
-    /**
-     * @param mixed $rg
-     */
     public function setRg($rg)
     {
         $this->rg = $rg;
+        return $this;
     }
 
     /**
@@ -79,6 +69,7 @@ class PessoaFisica extends Cliente implements GrauDeImportancia, EnderecoAlterna
     function setGrauDeImportancia($grau)
     {
         $this->importancia = $grau;
+        return $this;
     }
 
     function getGrauDeImportancia()
@@ -89,6 +80,7 @@ class PessoaFisica extends Cliente implements GrauDeImportancia, EnderecoAlterna
     function setEnderecoAlternativo($endereco)
     {
         $this->endereco_alternativo = $endereco;
+        return $this;
     }
 
     function getEnderecoAlternativo()

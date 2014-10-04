@@ -15,19 +15,18 @@ abstract class Cliente
     public $tel_fixo;
     public $endereco;
 
-    public function __construct($nome, $tel_fixo, $endereco)
+    public function __construct()
     {
-        $this->nome = $nome;
-        $this->tel_fixo = $tel_fixo;
-        $this->endereco = $endereco;
     }
 
     /**
-     * @param mixed $endereco
+     * @param $endereco
+     * @return Cliente
      */
     public function setEndereco($endereco)
     {
         $this->endereco = $endereco;
+        return $this;
     }
 
     /**
@@ -39,11 +38,13 @@ abstract class Cliente
     }
 
     /**
-     * @param mixed $nome
+     * @param $nome
+     * @return Cliente
      */
     public function setNome($nome)
     {
         $this->nome = $nome;
+        return $this;
     }
 
     /**
@@ -55,11 +56,13 @@ abstract class Cliente
     }
 
     /**
-     * @param mixed $tel_fixo
+     * @param $tel_fixo
+     * @return Cliente
      */
     public function setTelFixo($tel_fixo)
     {
         $this->tel_fixo = $tel_fixo;
+        return $this;
     }
 
     /**

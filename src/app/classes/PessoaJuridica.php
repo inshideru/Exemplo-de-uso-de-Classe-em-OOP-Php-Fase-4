@@ -19,20 +19,14 @@ class PessoaJuridica extends Cliente implements GrauDeImportancia, EnderecoAlter
     private $importancia;
     private $endereco_alternativo;
 
-    public function __construct($nome, $cnpj, $insc_estadual, $tel_fixo, $fax, $endereco)
+    public function __construct()
     {
-        parent::__construct($nome, $tel_fixo, $endereco);
-        $this->cnpj = $cnpj;
-        $this->fax = $fax;
-        $this->insc_estadual = $insc_estadual;
     }
 
-    /**
-     * @param mixed $cnpj
-     */
     public function setCnpj($cnpj)
     {
         $this->cnpj = $cnpj;
+        return $this;
     }
 
     /**
@@ -43,12 +37,10 @@ class PessoaJuridica extends Cliente implements GrauDeImportancia, EnderecoAlter
         return $this->cnpj;
     }
 
-    /**
-     * @param mixed $fax
-     */
     public function setFax($fax)
     {
         $this->fax = $fax;
+        return $this;
     }
 
     /**
@@ -59,12 +51,10 @@ class PessoaJuridica extends Cliente implements GrauDeImportancia, EnderecoAlter
         return $this->fax;
     }
 
-    /**
-     * @param mixed $insc_estadual
-     */
     public function setInscEstadual($insc_estadual)
     {
         $this->insc_estadual = $insc_estadual;
+        return $this;
     }
 
     /**
@@ -78,6 +68,7 @@ class PessoaJuridica extends Cliente implements GrauDeImportancia, EnderecoAlter
     function setGrauDeImportancia($grau)
     {
         $this->importancia = $grau;
+        return $this;
     }
 
     function getGrauDeImportancia()
@@ -88,6 +79,7 @@ class PessoaJuridica extends Cliente implements GrauDeImportancia, EnderecoAlter
     function setEnderecoAlternativo($endereco)
     {
         $this->endereco_alternativo = $endereco;
+        return $this;
     }
 
     function getEnderecoAlternativo()
