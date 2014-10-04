@@ -1,4 +1,4 @@
-# Orientação a Objetos em PHP - Fase 3
+# Orientação a Objetos em PHP - Fase 4
 
 * Estudo de Orientação a Objetos com Php - Exemplo bem simples com a criação de uma classe Cliente.
 * Foram adicionados 20 Objetos das classes Pessoa Físisca e Pessoa Jurídica a um array.
@@ -8,7 +8,16 @@
 * Foi utilizado o padrão PSR-0 para o autoloader
 
 ### Testes
-* Executar php -S localhost:8000 -t public_html na raiz do projeto para iniciar o servidor buit-in do php já com redirecionamento para a pasta pública
+* Executar o comando abaixo na raiz do projeto para iniciar o servidor buit-in do php já com redirecionamento para a pasta pública
+```php
+ php -S localhost:8000 -t public_html 
+```
+## Fixture
+* Necessário criar banco com o nome "ssphp"
+* Para gerar as tabelas do banco de dados e populá-las, executar na raiz. Utilizando o terminal.
+```php
+php src/fixture.php
+```
 
 ### Recursos utilizados
 * Bootswatch Flatly Theme para boostrap - http://bootswatch.com/flatly/
