@@ -84,7 +84,7 @@ if ($posicao >= $quant_clientes || $posicao < 0) {
             echo '<td>' . $cliente->getEnderecoAlternativo() . '</td>';
             echo '</tr>';
             echo '<tr>';
-            echo '</tr>';
+            echo '</tr>';var_dump($clientes_lista);
               }
 
             ?>

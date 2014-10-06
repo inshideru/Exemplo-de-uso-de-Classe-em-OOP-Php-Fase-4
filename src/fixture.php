@@ -49,7 +49,7 @@ create table tb_pessoa_juridica (
 	nome varchar(60),
     tel_fixo varchar(13),
     endereco varchar(255),
-    cnpj varchar(18),
+    cnpj varchar(19),
     insc_estadual varchar(15),
     fax varchar(13),
     importancia int,
