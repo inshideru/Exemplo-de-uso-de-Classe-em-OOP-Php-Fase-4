@@ -5,6 +5,8 @@
  * Date: 04/10/14
  * Time: 17:37
  */
+ini_set('display_errors', true);
+error_reporting(E_ALL | E_STRICT);
 require 'app/ClassesInterfaces/EnderecoAlternativo.php';
 require 'app/ClassesInterfaces/GrauDeImportancia.php';
 require 'app/Classes/Cliente.php';
@@ -35,7 +37,7 @@ create table tb_pessoa_fisica (
     endereco varchar(255),
     celular varchar(14),
     rg varchar(15),
-    cpf varchar(13),
+    cpf varchar(14),
     importancia int,
     endereco_alternativo varchar(255)
 );
